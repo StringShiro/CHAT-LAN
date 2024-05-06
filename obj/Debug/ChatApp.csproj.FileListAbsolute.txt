@@ -23,3 +23,4 @@ C:\Users\ADMIN\Desktop\ChatApp\obj\Debug\ChatApp.exe
 C:\Users\ADMIN\Desktop\ChatApp\obj\Debug\ChatApp.pdb
 C:\Users\ADMIN\Desktop\ChatApp\obj\Debug\CustomControls\Conversation.g.cs
 C:\Users\ADMIN\Desktop\ChatApp\obj\Debug\CustomControls\Conversation.baml
+C:\Users\ADMIN\Desktop\ChatApp\obj\Debug\ChatApp.csproj.AssemblyReference.cache

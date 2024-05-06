@@ -1,4 +1,5 @@
-﻿using ChatApp.CustomControls;
+﻿using ChatApp.Commands;
+using ChatApp.CustomControls;
 using ChatApp.Models;
 using System;
 using System.Collections.Generic;
@@ -8,6 +9,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace ChatApp.ViewModels
 {
@@ -111,12 +113,38 @@ namespace ChatApp.ViewModels
         }
         #endregion
 
+        #region Commands
+        //To get the ContactName of selected chat so that we can open corresponding conversation
+        protected ICommand _getSelectedChatCommand;
+        public ICommand GetSelectedChatCommand => _getSelectedChatCommand ??= new ReplayCommand(SqlParameter =>
+        {
+            if (SqlParameter is ChatListData v)
+            {
+                //getting contactname from selected chat
+                ContactName = v.ContactName;
+                OnPropertyChanged("ContactName");
+
+                //getting contactphoto from selected chat
+                ContactPhoto = v.ContactPhoto;
+                OnPropertyChanged("ContactPhoto");
+            }
+        });
+        #endregion
+
         #endregion
 
         #region Conversations
 
         #region Properties
-        public ObservableCollection<ChatConversation> Conversations;
+        protected ObservableCollection<ChatConversation> mConversations;
+        public ObservableCollection<ChatConversation> Conversations
+        {
+            get => mConversations;
+            set {
+                mConversations = value;
+                OnPropertyChanged();
+            }
+        }
         #endregion
 
         #region Logics
