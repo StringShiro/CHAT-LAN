@@ -7,6 +7,10 @@
              mc:Ignorable="d" 
              Height="Auto"
              Width="Auto">
+    <UserControl.DataContext>
+        <viewmodels:ViewModel/>
+    </UserControl.DataContext>
+    
     <UserControl.Resources>
         <Style x:Key="MessageTextStyle" TargetType="{x:Type TextBlock}">
             <Setter Property="FontSize" Value="15"/>
@@ -68,7 +72,7 @@
                                                 <Grid.ColumnDefinitions>
                                                     <!--Column Reply Button-->
                                                     <ColumnDefinition Width="Auto"/>
-                                                    
+
                                                     <!--Column Message Bubble-->
                                                     <ColumnDefinition/>
 
@@ -82,7 +86,7 @@
                                                     Height="Auto"
                                                     MinHeight="60"
                                                     Width="Auto"
-                                                    VerticalAlignment="Center"> 
+                                                    VerticalAlignment="Center">
                                                     <Border.Style>
                                                         <!--To change color of our bubble on message received and message sent-->
                                                         <Style TargetType="{x:Type Border}">
@@ -108,21 +112,21 @@
                                                             Style="{StaticResource MessageTextStyle}"/>
                                                     </DockPanel>
 
+
                                                 </Border>
 
                                                 <!--Reply button-->
                                                 <Button
                                                     x:Name="ReplyButton"
-                                        Content="{StaticResource reply}"
-                                        Visibility="Collapsed"
-                                        Grid.Column="2"
-                                        Style="{StaticResource IconButtonStyle}"/>
+                                                    Content="{StaticResource reply}"
+                                                    Visibility="Visible"
+                                                    Grid.Column="2"
+                                                    Style="{StaticResource IconButtonStyle}"/>
 
                                             </Grid>
-                                            
                                             <!--Message Time-->
                                             <TextBlock 
-                                    Grid.Row="2">
+                                                Grid.Row="2">
                                                 <TextBlock.Style>
                                                     <Style TargetType="{x:Type TextBlock}">
                                                         <Setter Property="VerticalAlignment" Value="Center"/>
