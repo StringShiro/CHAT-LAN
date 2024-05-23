@@ -33,7 +33,6 @@
         <DataTemplate x:Key="ItemTemplate">
             <Button>
                 <Button.Style>
-        
                     <Style TargetType="{x:Type Button}">
                         <Setter Property="SnapsToDevicePixels" Value="True"/>
                         <Setter Property="Height" Value="Auto"/>

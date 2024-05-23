@@ -26,3 +26,15 @@ C:\Users\ADMIN\Desktop\ChatApp\obj\Debug\ChatApp.pdb
 C:\Users\ADMIN\Desktop\ChatApp\bin\Debug\System.dll
 C:\Users\ADMIN\Desktop\ChatApp\bin\Debug\System.xml
 C:\Users\ADMIN\Desktop\ChatApp\obj\Debug\ChatApp.csproj.CopyComplete
+C:\Users\ADMIN\Desktop\ChatApp\obj\Debug\Login.g.cs
+C:\Users\ADMIN\Desktop\ChatApp\obj\Debug\Login.baml
+C:\Users\ADMIN\Desktop\ChatApp\bin\Debug\MaterialDesignColors.dll
+C:\Users\ADMIN\Desktop\ChatApp\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\ADMIN\Desktop\ChatApp\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\ADMIN\Desktop\ChatApp\bin\Debug\MaterialDesignColors.pdb
+C:\Users\ADMIN\Desktop\ChatApp\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\ADMIN\Desktop\ChatApp\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\ADMIN\Desktop\ChatApp\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\ADMIN\Desktop\ChatApp\bin\Debug\Microsoft.Xaml.Behaviors.xml
+C:\Users\ADMIN\Desktop\ChatApp\obj\Debug\Signup.g.cs
+C:\Users\ADMIN\Desktop\ChatApp\obj\Debug\Signup.baml
